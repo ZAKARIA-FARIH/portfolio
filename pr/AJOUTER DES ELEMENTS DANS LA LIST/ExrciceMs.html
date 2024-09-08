@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Marchendise</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='ExrciceMs.css'>
+    <!-- Css Boîte de dialogue--><link rel='stylesheet' href='boite/Boîte_de_dîalogue.css'>
+</head>
+<body id="bd">
+<!-- menu -->
+    <!-- <a href="../page-principale.html"><img src="icons8-home-50.png" id="icoHome" alt="HOME"></a> -->
+    <p class="TitleExe">AJOUTER DES ELEMENTS DANS LA LIST </p>
+    <div class="BigDivMarsh">
+        <div class="DivMarsh1">
+            <label for="" class="labels">NOM DE MARCHANDISE</label>
+            <input type="text" class="inputs" id="ms"><br><br>
+            <label for="" class="labels">LIST DES MARCHANDISE</label>
+            <select class="inputs" id="List"  onclick="affdata()">
+                <option value=""></option>
+            </select><br><br>
+            <label for="" class="label">PRIX UNITAIRE</label><input type="text" class="input" id="Pr">
+            <label for="" class="label">QUANTITE</label><input type="text" class="input" id="Qtt"><br><br>
+            <label for="" class="label">TAUX TVA</label>
+            <select class="input" id="Taux">
+                <option >0%</option>
+                <option >20%</option>
+                <option >14%</option>
+                <option >10%</option>
+                <option >7%</option>
+            </select>
+            <label for="" class="label">MONTANT HT</label><p class="input" id="Mht"></p><br><br>
+            <label for="" class="label">MONTANT TVA</label><p class="input" id="Mtv"></p>
+            <label for="" class="label">MONTENT TTC</label><p class="input" id="Mttc"></p>
+        </div>
+        <div class="DivMarsh2">
+            <button class="buttons"  onclick="calculer()">Calculer</button><br><br>
+            <button class="buttons"  onclick="Valider()">Valider</button><br><br>
+            <button class="buttons"  onclick="Afficher('Voulez vous vraiment Supprimer tout ?',false,-1,'phot2')">Supprimer</button><br><br>
+            <button class="buttons"  onclick="Afficher('Voulez vous vraiment Effacer tout ?',false,1,'phot2')">Effacer Tout</button><br><br>
+            <button class="buttons"  onclick="Afficher('Voulez vous vraiment Effacer tout ?',false,1,'phot3')">Nouveau</button><br><br>
+        </div>
+    </div>
+    </div>
+    <!-- --------------------Boîte de dialogue----------------------- -->
+<div id="BigDivBoîte">
+    <div id="PremiereMiniDivBoîte" onmousedown="Deplacer()" onmouseup="Placer()">
+        <p id="TitreBoîte">TITRE</p>
+        <img id="CloseBoîte" src="boite/icons8-macos-close-30.png" onclick="FermerBoite()">
+    </div>
+    <div id="DeuxiemeMiniDivBoîte">
+        <img id="IconeBoite" src="boite/icons8-error-100.png">
+        <div id="CommentBoîte">dzdazdadazdazdazdafzefdazdazdddzefzefzefzezdazrzfzfrzzzdazda</div>
+    </div>
+    <div id="ButtonBoîte"> 
+        <button id="ButtonOuiBoîte" onclick="Oui()">Oui</button>
+        <button id="ButtonNonBoîte" onclick="FermerBoite()">Non</button>
+    </div>
+</div>
+<script>
+    function Oui(){
+        if(k==1){
+            Effacer();
+        }
+        else if(k==-1){
+            Supprimer();
+        }
+            FermerBoite();
+    }
+    function Non(){
+        FermerBoite();
+    }
+</script>
+<!-- Afficher('Veuillez compléter la Saisie des informations !!',true); -->
+<!-- Css Boîte de dialogue--><script src="boite/Boîte_de_dîalogue.js"></script>
+    <!-- -------------------- Fin Boîte de dialogue----------------------- -->
+    <script src="ExrciceMs.js"></script>
+</body>
+</html>

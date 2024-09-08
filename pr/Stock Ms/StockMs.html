@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Stockms</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='StockMs.css'>     
+    <!-- Css Boîte de dialogue--><link rel='stylesheet' href='boite/Boîte_de_dîalogue.css'>
+  </head>
+<body>
+
+  <!-- <a href="../page-principale.html"><img src="icons8-home-50.png" id="icoHome" alt="HOME"></a> -->
+     <h3 class="TitreM">StockMs</h3>
+    <div class="BigDivM">
+      <div class="MenuDiv1M">
+        <label class="labelsM">Réference</label>   <input type="text" id="Rf" class="inputsM">
+        <label class="labelsM">Marchandise</label> <input type="text" id="Ma" class="inputsM">
+        <label class="labelsM">Prix</label>        <input type="text" id="Pr" class="inputsM"><br><br>
+        <label class="labelsM">Quantite</label>    <input type="text" id="Qu" class="inputsM">
+        <label class="labelsM">Foiurnisseur</label><input type="text" id="Fo" class="inputsM">
+        <label class="labelsM">Date entreé</label> <input type="text" id="Da" class="inputsM"><br><br>
+        <label class="labelsM">Observation</label> <input type="text" id="Ob" class="inputsM"><br>
+      </div>
+      <div class="MenuDiv2M">
+        <button class="buttons" onclick="Ajouter()">Ajouter</button>
+        <button class="buttons" onclick="Rechercher()">Rechercher</button><br><br>
+        <button class="buttons" onclick="Supprimer()">Suprimer</button>
+        <!-- <button class="buttons" onclick="Modifier()">Modifier</button> -->
+        <br><br>
+        <button class="buttons" onclick="AfficherEx()">Afficher</button>
+        <button class="buttons" onclick="Masquer()()">Masquer</button>
+      </div>
+    </div>
+    <div class="llll">
+    <button class="buttons tt rr" onclick="Debut()">Debut</button>
+    <button class="buttons tt" onclick="Suivant()">Suivant</button>
+    <button class="buttons tt" onclick="Precedent()">Precedent</button>
+    <button class="buttons tt" onclick="Fin()">Fin</button>
+  </div>
+    <div class="DivT">
+    <label for="" class="titre labelsT re">Réference</label>
+    <label for="" class="titre labelsT">Marchandise</label>
+    <label for="" class="titre labelsT">Prix</label>
+    <label for="" class="titre labelsT">Quantite</label>
+    <label for="" class="titre labelsT">Foiurnisseur</label>
+    <label for="" class="titre labelsT">Date entreé</label>
+    <label for="" class="titre labelsT re2">Observation</label>
+  </div>
+  <div id="Zone2">
+    <table id="Ta"></table>
+  </div>
+          <!-- --------------------Boîte de dialogue----------------------- -->
+<div id="BigDivBoîte">
+  <div id="PremiereMiniDivBoîte" onmousedown="Deplacer()" onmouseup="Placer()">
+      <p id="TitreBoîte">TITRE</p>
+      <img id="CloseBoîte" src="boite/icons8-macos-close-30.png" onclick="FermerBoite()">
+  </div>
+  <div id="DeuxiemeMiniDivBoîte">
+      <img id="IconeBoite" src="boite/icons8-error-100.png">
+      <div id="CommentBoîte">dzdazdadazdazdazdafzefdazdazdddzefzefzefzezdazrzfzfrzzzdazda</div>
+  </div>
+  <div id="ButtonBoîte"> 
+      <button id="ButtonOuiBoîte" onclick="Oui()">Oui</button>
+      <button id="ButtonNonBoîte" onclick="FermerBoite()">Non</button>
+  </div>
+</div>
+<script>
+  function Oui(){
+      if(k==1){
+          Effacer();
+      }
+      // else if(k==-1){
+      //     Supprimer();
+      // }
+          FermerBoite();
+  }
+  function Non(){
+      FermerBoite();
+  }
+</script>
+<!-- Afficher('Veuillez compléter la Saisie des informations !!',true); -->
+<!-- Css Boîte de dialogue--><script src="boite/Boîte_de_dîalogue.js"></script>
+  <!-- -------------------- Fin Boîte de dialogue----------------------- -->
+      <script src='StockMs.js'></script>
+</body>
+</html>
+
+
+
+
+
+

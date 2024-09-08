@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <link rel='stylesheet' href='Bulletin.css'>
+    <!-- Css Boîte de dialogue--><link rel='stylesheet' href='boite/Boîte_de_dîalogue.css'>
+</head>
+<body id="bdy">
+    <!-- menu c -->
+  
+    <!--Fin menu c -->
+    <!-- <a href="../page-principale.html"><img src="avat/icons8-home-50.png" id="icoHome" alt="HOME"></a> -->
+    <h2 id="TitleBulletin">Bulletin De Note 2022\2023</h2>
+    <div id="BigDivBulletin">
+        <div id="MenuDivBulletin">
+            <div id="Menu2DivBulletin">
+                <label for="" id="BulletinLabelNom">Nom et Prénom</label>
+                <input type="text"  id="BulletinName" >
+            </div>
+            <div id="Menu3DivBulletin">
+                <label for="" id="BulletinLabelListeNom">Liste des Noms</label>
+                <select id="BulletinListeNom" onclick="openListe()">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+        <div class="DivtableButton">
+        <div class="DivTable">
+  <table class="table1" >
+    <thead>
+        <tr >
+            <th class="th1">MATIERES</th>
+            <th class="th1">Note 1</th>
+            <th class="th1">Note 2</th>
+            <th class="th1">Moyenne</th>
+            <th class="th1">Coef</th>
+            <th class="th1">Resultas</th>
+            <th class="th1">Observation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td  colspan="7" class="BulletinBigMatieres">
+                Information  Et Bureautique
+            </td>
+        </tr>
+        <tr>
+            <td class="MatiersBulletin">Programmation</td>
+            <td class="Note1Bulletin"><input  id="Note1Programmation" class="inputBuilltin Nt1"  type="text"></td>
+            <td class="Note2Bulletin"><input  id="Note2Programmation" class="inputBuilltin Nt2"  type="text"></td>
+            <td class="MoyenneBulletin"      id="MoyenneProgrammation"></td> 
+            <td class="CouefBulletin"        id="CouefProgrammation">4</td>  
+            <td class="RésultasBulletin"     id="RésultasProgrammation"></td>
+            <td class="ObservationBulletin"  id="ObservationProgrammation"></td>
+        </tr>
+        
+        <tr>
+            <td class="MatiersBulletin">Bureautique</td>
+            <td class="Note2Bulletin"><input  id="Note1Bureautique"   class="inputBuilltin Nt1" type="text"></td>
+            <td class="Note1Bulletin"><input  id="Note2Bureautique"   class="inputBuilltin Nt2" type="text"></td>
+            <td class="MoyenneBulletin"      id="MoyenneBureautique"></td>
+            <td class="CouefBulletin"        id="CouefBureautique">3</td>
+            <td class="RésultasBulletin"     id="RésultasBureautique"></td>
+            <td class="ObservationBulletin"  id="ObservationBureautique"></td>
+            <!-- class="inputBuilltin" -->
+        </tr>
+        <tr>
+            <td class="MatiersBulletin">Systéme d'exploitation</td>
+            <td class="Note2Bulletin"><input  id="Note1Systéme"   class="inputBuilltin Nt1" type="text"></td>
+            <td class="Note1Bulletin"><input  id="Note2Systéme"   class="inputBuilltin Nt2" type="text"></td>
+            <td class="MoyenneBulletin"      id="MoyenneSystéme"></td>
+            <td class="CouefBulletin"        id="CouefSystéme">2</td>
+            <td class="RésultasBulletin"     id="RésultasSystéme"></td>
+            <td class="ObservationBulletin"  id="ObservationSystéme"></td>
+        </tr>
+        <tr>
+           <td  colspan="7" class="BulletinBigMatieres">
+                Information  Et Bureautique
+            </td>
+        </tr>
+        <tr>
+            <td class="MatiersBulletin">Comtabilité</td>
+            <td class="Note1Bulletin"><input  id="Note1Comtabilité" class="inputBuilltin Nt1" type="text"></td>
+            <td class="Note2Bulletin"><input  id="Note2Comtabilité" class="inputBuilltin Nt2" type="text"></td>
+            <td  class="MoyenneBulletin"     id="MoyenneComtabilité"></td>
+            <td class="CouefBulletin"        id="CouefComtabilité">3</td>
+            <td class="RésultasBulletin"     id="RésultasComtabilité"></td>
+            <td class="ObservationBulletin"  id="ObservationComtabilité"></td>
+        </tr>
+        <tr>
+            <td class="MatiersBulletin">Gestion</td>
+            <td class="Note1Bulletin"><input  id="Note1Gestion" class="inputBuilltin Nt1" type="text"></td>
+            <td class="Note2Bulletin"><input  id="Note2Gestion" class="inputBuilltin Nt2" type="text"></td>
+            <td class="MoyenneBulletin"        id="MoyenneGestion"></td>
+            <td class="CouefBulletin"      id="CouefGestion">2</td>
+            <td class="RésultasBulletin"     id="RésultasGestion"></td>
+            <td class="ObservationBulletin"  id="ObservationGestion"></td>
+        </tr>
+        <tr>
+            <td  colspan="7" class="BulletinBigMatieres">
+                Langues
+            </td>
+        </tr>
+        <tr>
+            <td class="MatiersBulletin">Communication Français</td>
+            <td class="Note1Bulletin"><input id="Note1CommunicationFr" class="inputBuilltin Nt1" type="text"></td>
+            <td class="Note2Bulletin"><input id="Note2CommunicationFr" class="inputBuilltin Nt2" type="text"></td>
+            <td class="MoyenneBulletin"      id="MoyenneCommunicationFr"></td>
+            <td class="CouefBulletin"        id="CouefCommunicationFr">2</td>
+            <td class="RésultasBulletin"     id="RésultasCommunicationFr"></td>
+            <td class="ObservationBulletin"  id="ObservationCommunicationFr"></td>
+        </tr>
+        <tr>
+            <td class="MatiersBulletin">Communication Anglais</td>
+            <td class="Note1Bulletin"><input id="Note1CommunicationAn" class="inputBuilltin Nt1" type="text"></td>
+            <td class="Note2Bulletin"><input id="Note2CommunicationAn" class="inputBuilltin Nt2" type="text"></td>
+            <td class="MoyenneBulletin"      id="MoyenneCommunicationAn"></td>
+            <td class="CouefBulletin"        id="CouefCommunicationAn">1</td>
+            <td class="RésultasBulletin"     id="RésultasCommunicationAn"></td>
+            <td class="ObservationBulletin"  id="ObservationCommunicationAn"></td>
+        </tr>
+    </tbody>
+            </table>
+            </div>
+            <div class="DivButton">
+                <button class="buttons" onclick="Validierliste()">Validier Les Notes</button><br> 
+                <button class="buttons" onclick="Afficher('Veullez vraiment Effacer Tous les Information ? ',false,1,'phot2')">Effacer</button><br>
+                <button class="buttons" onclick="Afficher('Veullez Entrer Nouvelle Notes ? ',false,-1,'phot3')">Nouveau</button><br>
+            </div>
+        </div>
+        <div class="DivMoyenneGenerale">
+            <div>
+                <button class="buttons MoyenneNote" onclick="clacule()">
+                    Calculer la Moyenne Générale
+                </button>
+                    </div> 
+             <div>
+        <table class="table2">
+        <tr>
+            <td class="td2" >TOTAL</td>
+            <td class="td2 T" id="TotalNotes"></td>
+        </tr>
+        <tr>
+            <td class="td2">Moyenne Générale</td> 
+            <td class="td2 Mg" id="MoyenneTotalNotes"></td>
+        </tr>
+        </table>
+            </div>
+    </div>
+    </div>
+    <!-- --------------------Boîte de dialogue----------------------- -->
+<div id="BigDivBoîte">
+    <div id="PremiereMiniDivBoîte" onmousedown="Deplacer()" onmouseup="Placer()">
+        <p id="TitreBoîte">TITRE</p>
+        <img id="CloseBoîte" src="boite/icons8-macos-close-30.png" onclick="FermerBoite()">
+    </div>
+    <div id="DeuxiemeMiniDivBoîte">
+        <img src="boite/icons8-error-100.png" id="IconeBoite" >
+        <div id="CommentBoîte">dzdazdadazdazdazdafzefdazdazdddzefzefzefzezdazrzfzfrzzzdazda</div>
+    </div>
+    <div id="ButtonBoîte"> 
+        <button id="ButtonOuiBoîte" onclick="Oui()">Oui</button>
+        <button id="ButtonNonBoîte" onclick="FermerBoite()">Non</button>
+    </div>
+</div>
+<script>
+    function Oui(){
+        if(k==1){
+            Effacer();
+        }
+        // else if(k==-1){
+        //      Suppremer();
+        // }
+            FermerBoite();
+    }
+
+</script>
+<!-- Css Boîte de dialogue--><script src="boite/Boîte_de_dîalogue.js"></script>
+    <!-- -------------------- Fin Boîte de dialogue----------------------- -->
+    <script src='Bulletin.js'></script>
+</body>
+</html>

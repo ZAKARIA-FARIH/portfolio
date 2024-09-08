@@ -1,0 +1,94 @@
+.title {
+  width: 170px;
+  height: 50px;
+  color: #e65900;
+  background-color: #333;
+  margin-top: 30px;
+  margin-left: 45%;
+  font-size: 30px;
+  line-height: 40px;
+  padding-left: 15px;
+  /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+  border-radius:20px  ;
+}
+.calculator {
+  padding: 10px;
+  border-radius: 1em;
+  height: 470px;
+  width: 550px;
+  margin: auto;
+  margin-top: 5px;
+  background-color: #ff91007a;
+  box-shadow: 10px 10px 10px orange;
+  /* font-size: 80px; */
+}
+.display-box {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #f5b3b37d;
+  border: solid rgb(255, 89, 0) 0.5px;
+  color: rgb(255 95 0 / 92%);
+  border-radius: 5px;
+  width: 100%;
+  height: 65%;
+  font-size: 20px;
+}
+
+#btn {
+  background-color: #e65900;
+}
+
+input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #ff9100;
+    /* color: rgb(255, 255, 255); */
+    border: solid black 0.5px;
+    /* width: 100%; */
+    width: 90%;
+    border-radius: 9px;
+    height: 70%;
+    outline: none;
+    cursor: pointer;
+}
+input:hover[type=button] {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000000;
+  /* color: #e65900; */
+  color: rgb(255, 255, 255);
+  border: solid black 0.5px;
+  /* width: 100%; */
+  width: 90%;
+  border-radius: 9px;
+  height: 70%;
+  outline: none;
+  cursor: pointer;
+}
+
+input:active[type=button] {
+    background: #ff8c00;
+    -webkit-box-shadow: inset 0px 0px 5px #ff8800;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+/* #icoHome{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+  } */
+/* button{
+
+} */
+
+
+
+  /*  menu c */
+/* @import url('https://fonts.googleapis.com/css?family=Lato&display=swap'); */
+
+
+   
+  .homei{
+    width: 20px;
+    height: 20px;
+    /* margin-right: 50px; */
+  }
+  

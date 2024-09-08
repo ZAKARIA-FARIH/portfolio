@@ -1,0 +1,104 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif,Arial, Helvetica, sans-serif;
+    font-size:15px;
+}
+#BigDivBoîte{
+    width: 400px;
+    height:180px;
+    background-color: rgb(248, 220, 183);
+    position: absolute; 
+    border-radius: 10px 10px 10px 10px;
+    display:none; 
+    top: 25%;
+    left:30% ;
+    /* z-index: 999; */
+}
+#BigDivBoîte::before{
+    content: "";
+    width: 23px;
+    height: 23px;
+    background-color: white;
+    position: absolute;
+    top: -2px;
+    right:-4px;
+    border-radius: 30%;
+}
+#CloseBoîte{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: -4px;
+    top: -2px;
+}
+#PremiereMiniDivBoîte{
+    width: 100%;
+    height: 29px;
+    background-color: #ff8800;
+    border-radius: 10px 0px 0px 0px;
+}
+#TitreBoîte{
+    color: rgb(255, 146, 3);
+    font-size: 14px;
+    line-height:29px;
+    padding-left:10px;
+}
+#DeuxiemeMiniDivBoîte{
+    width: 350px;
+    height: 110px;
+    /* background-color: black; */
+    display: flex;
+}
+#IconeBoite{
+    width:80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+#CommentBoîte{
+    width:200px;
+    overflow:hidden ;
+    height: 60px;
+    /* background-color: aqua; */
+    overflow-wrap: break-word;
+    color: rgb(0, 0, 0);
+    margin-left: 30px;
+    margin-top: 25px;
+}
+#ButtonBoîte{
+    margin-left: 30px;
+}
+#ButtonNonBoîte{
+    font-weight: bold;
+    width: 75px;
+    margin-left: 10px;
+    border:none;
+    outline: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 10px;
+    color: #ff8800;
+}
+#ButtonOuiBoîte{
+    font-weight: bold;
+    width: 75px;
+    border:none;
+    outline: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 10px;
+    color: #ff8800;
+}
+#ButtonOuiBoîte:hover{
+    cursor: pointer;
+    background-color: #ff8800;
+    color: antiquewhite;
+}
+#ButtonNonBoîte:hover{
+    cursor: pointer;
+    background-color: #ff8800;
+    color: antiquewhite;
+}
+#CloseBoîte:hover{
+    cursor: pointer;
+}

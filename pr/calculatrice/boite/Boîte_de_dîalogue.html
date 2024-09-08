@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>boîte de dialogue</title>
+<!-- Css Boîte de dialogue--><link rel='stylesheet' href='Boîte_de_dîalogue.css'>
+</head>
+<body id="bdy"> 
+<!-- --------------------Boîte de dialogue----------------------- -->
+<div id="BigDivBoîte">
+    <div id="PremiereMiniDivBoîte" onmousedown="Deplacer()" onmouseup="Placer()">
+        <p id="TitreBoîte">TITRE</p>
+        <img id="CloseBoîte" src="icons8-macos-close-30.png" onclick="FermerBoîte()">
+    </div>
+    <div id="DeuxiemeMiniDivBoîte">
+        <img id="IconeBoite" src="boite/attenzione.png">
+        <div id="CommentBoîte">dzdazdadazdazdazdafzefdazdazdddzefzefzefzezdazrzfzfrzzzdazda</div>
+    </div>
+    <div id="ButtonBoîte"> 
+        <button id="ButtonOuiBoîte" onclick="Oui()">Oui</button>
+        <button id="ButtonNonBoîte" onclick="FermerBoîte()">Non</button>
+    </div>
+</div>
+<script>
+    function Oui(){
+        if(k==1){
+            Effacer();
+        }
+        else if(k==-1){
+            Suppremer();
+        }   
+            FermerBoîte();
+    }
+</script>
+<!-- Css Boîte de dialogue--><script src="Boîte_de_dîalogue.js"></script>
+    <!-- -------------------- Fin Boîte de dialogue----------------------- -->
+</body>
+</html>

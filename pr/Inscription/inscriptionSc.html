@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulaire Inscription</title>
+    <link rel='stylesheet' href='inscriptionSc.css'>
+    <!-- Css Boîte de dialogue--><link rel='stylesheet' href='boite/Boîte_de_dîalogue.css'>
+</head>
+<body>
+  <!-- menu c -->
+  
+    <!--Fin menu c -->
+  <h1 id="TitleFormInscription">
+    Formulaire Inscription 2022\2023 
+  </h1>
+  <!-- <a href="../page-principale.html"><img src="avat/icons8-home-50.png" id="icoHome" alt="HOME"></a> -->
+  <div class="BigDivFormIns">
+    <div class="Minu1FormIns">
+        <div id="MenuDiv1FormIns">
+           <label for="" class="labelFormIns">Nom et Prenom</label>
+           <input class="inputFormIns" type="text" id="NomIns">
+
+           <label for="" class="labelFormIns">Date de Naissence</label>
+           <input class="inputFormInsd" type="datetime-local" id="DateIns"><br><br>
+
+           <label for="" class="labelFormIns">Numéro CIN</label>
+           <input class="inputFormIns" id="Ncin" type="text">
+           
+           <label for="" class="labelFormIns">Numéro de Télephone</label>
+           <input class="inputFormIns" type="tel" id="NumTelIns"><br><br>
+
+           <label for="" class="labelFormIns">Niveau Scolaire</label>
+           <input class="inputFormIns" type="text" id="NiveauScIns">
+
+           <label for="" class="labelFormIns">Section Choisir</label>
+           <select id="lalistech" size="">
+            <option value=""></option>
+            <option value="">TS Gestion des Eses</option>
+            <option value="">TS en Developpement</option>
+            <option value="">TS Gestion informatique</option>
+            <option value="">Opérateur de Saisie</option>
+           </select>
+        </div>
+        <div id="MenuDiv2FormIns">
+                <label for="" class="labelListNoms">Liste des Noms</label>
+                <select id="lalisteNom" onclick="affliste()">
+                  <option value=""></option>
+                </select>
+                <div id="bigdivAff">
+                  <img src="avat/333333.png" id="DivAffichImg" alt="">
+                </div>
+                  <button class="buttons" onclick="Validierliste()">Validier</button>
+            <button class="buttons" onclick="Afficher('Veuillez Vraiment Effacer Tout',false,1,'phot2')">Effaecer</button>
+          </div>
+    </div>
+  </div>
+  <!-- --------------------Boîte de dialogue----------------------- -->
+<div id="BigDivBoîte">
+  <div id="PremiereMiniDivBoîte" onmousedown="Deplacer()" onmouseup="Placer()">
+      <p id="TitreBoîte">TITRE</p>
+      <img id="CloseBoîte" src="boite/icons8-macos-close-30.png" onclick="FermerBoîte()">
+  </div>
+  <div id="DeuxiemeMiniDivBoîte">
+      <img id="IconeBoite" src="boite/boite/attenzione.png">
+      <div id="CommentBoîte">dzdazdadazdazdazdafzefdazdazdddzefzefzefzezdazrzfzfrzzzdazda</div>
+  </div>
+  <div id="ButtonBoîte"> 
+      <button id="ButtonOuiBoîte" onclick="Oui()">Oui</button>
+      <button id="ButtonNonBoîte" onclick="FermerBoite()">Non</button>
+  </div>
+</div>
+<script>
+  function Oui(){
+      if(k==1){
+          Effacer();
+      }
+      // else if(k==-1){
+      //     Suppremer();
+      // }   
+          FermerBoite();
+  }
+</script>
+<!-- Css Boîte de dialogue--><script src="boite/Boîte_de_dîalogue.js"></script>
+  <!-- -------------------- Fin Boîte de dialogue----------------------- -->
+    <script src='inscriptionSc.js'></script>
+</body>
+</html>
