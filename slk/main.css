@@ -1,0 +1,17 @@
+.custom-width-img {
+    width: 80%; /* Ajustez cette valeur selon vos besoins */
+    margin: 0 auto; /* Centre l'image horizontalement */
+}
+.carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: transparent; /* Enlever le fond par défaut */
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            color: red; /* Couleur des icônes */
+            font-size: 4rem; /* Ajuster la taille des icônes */
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: #00000042;
+        }
+        
